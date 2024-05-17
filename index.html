@@ -5,78 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Student Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <div class="resume-container">
+    <div class="resume-container" id="resume">
         <header>
             <div class="profile-pic">
                 <img src="profile.jpg" alt="Profile Picture">
             </div>
             <div class="personal-info">
-                <h1>John Doe</h1>
-                <p>Email: johndoe@example.com</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>LinkedIn: linkedin.com/in/johndoe</p>
+                <h1>Октамбоев Элёр Санжарбекович</h1>
+                <p>Год рождения: 09.10.1999</p>
+                <p>ИИН: 991009301133</p>
+                <p>Телефон: +77752972826</p>
+                <p>Адрес: Г. Астана, р-н Есиль, Туркестан 10</p>
+                <p>Email: <a href="mailto:oktamboeve@gmail.com">oktamboeve@gmail.com</a></p>
             </div>
         </header>
         <section class="about">
-            <h2>About Me</h2>
-            <p>A dedicated medical student with a passion for patient care and a strong foundation in medical sciences. Seeking to leverage clinical skills and academic knowledge in a challenging medical environment.</p>
+            <h2>Цель</h2>
+            <p>Получить грант на резидентуру по специальности «Урология и андрология взрослая, детская» за счет МИО для развития здравоохранения в сельских местностях.</p>
         </section>
         <section class="education">
-            <h2>Education</h2>
+            <h2>Образование</h2>
             <div class="edu-item">
-                <h3>Doctor of Medicine (M.D.)</h3>
-                <p>University of Medical Sciences, 2022 - Present</p>
-                <p>GPA: 3.8/4.0</p>
+                <h3>Школа-лицей № 107 имени Ю.Сареми</h3>
+                <p>2005–2017</p>
+                <p>Окончил школу с отличием и знаком «Алтын белгi»</p>
             </div>
             <div class="edu-item">
-                <h3>Bachelor of Science in Biology</h3>
-                <p>State University, 2018 - 2022</p>
-                <p>GPA: 3.9/4.0</p>
+                <h3>Бакалавриат «Общая Медицина»</h3>
+                <p>НАО “Медицинский университет Астана”, 2017–2022</p>
+                <p>Текущий GPA: 3.51</p>
+            </div>
+            <div class="edu-item">
+                <h3>Интернатура «Общая Медицина»</h3>
+                <p>НАО “Медицинский университет Астана”, 2022–2024</p>
             </div>
         </section>
         <section class="experience">
-            <h2>Clinical Experience</h2>
+            <h2>Опыт работы</h2>
             <div class="exp-item">
-                <h3>Clinical Intern</h3>
-                <p>General Hospital, 2023 - Present</p>
-                <ul>
-                    <li>Assisted in patient assessments and diagnostic procedures</li>
-                    <li>Collaborated with healthcare team to provide patient care</li>
-                    <li>Participated in medical rounds and case discussions</li>
-                </ul>
-            </div>
-            <div class="exp-item">
-                <h3>Volunteer</h3>
-                <p>Community Health Clinic, 2021 - 2022</p>
-                <ul>
-                    <li>Provided health education and support to underserved populations</li>
-                    <li>Conducted health screenings and patient interviews</li>
-                </ul>
+                <h3>Ассистент врача</h3>
+                <p>Медицинский центр «Elizaveta», 2022–2023</p>
             </div>
         </section>
         <section class="skills">
-            <h2>Skills</h2>
+            <h2>Навыки</h2>
             <ul>
-                <li>Patient Care</li>
-                <li>Clinical Research</li>
-                <li>Medical Documentation</li>
-                <li>Team Collaboration</li>
-                <li>Public Health Advocacy</li>
+                <li>Свободное владение казахским, русским, узбекским языками</li>
+                <li>Английский уровень «Pre-Intermediate»</li>
+                <li>Опыт управления клиникой</li>
+                <li>Опытный пользователь ПК</li>
+                <li>Наличие водительских прав</li>
             </ul>
         </section>
         <section class="certifications">
-            <h2>Certifications</h2>
+            <h2>Сертификаты</h2>
             <ul>
-                <li>BLS (Basic Life Support) Certification</li>
-                <li>ACLS (Advanced Cardiovascular Life Support) Certification</li>
+                <li>Сертификат специалиста «Сестринское дело» 28.10.2022</li>
+            </ul>
+        </section>
+        <section class="interests">
+            <h2>Интересы</h2>
+            <ul>
+                <li>Урология детская</li>
+                <li>Репродуктивная медицина</li>
+                <li>Андрология</li>
+                <li>Внедрение систем искусственного интеллекта в медицине</li>
+                <li>Проблемы урбанизации в медицине</li>
             </ul>
         </section>
         <footer>
-            <p>&copy; 2024 John Doe. All rights reserved.</p>
+            <p>&copy; 2024 Элёр Октамбоев. Все права защищены.</p>
         </footer>
     </div>
+    <button id="downloadBtn">Скачать PDF</button>
     <script src="script.js"></script>
 </body>
 </html>
