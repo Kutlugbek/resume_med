@@ -5,80 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medical Student Resume</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 <body>
-    <div class="resume-container">
+    <div class="resume-container" id="resume">
         <header>
-            <div class="profile-pic">
-                <img src="profile.jpg" alt="Profile Picture">
-            </div>
-            <div class="personal-info">
-                <h1>Октамбоев Элёр Санжарбекович</h1>
-                <p>Год рождения: 09.10.1999</p>
-                <p>ИИН: 991009301133</p>
-                <p>Телефон: +77752972826</p>
-                <p>Адрес: Г. Астана, р-н Есиль, Туркестан 10</p>
-                <p>Email: <a href="mailto:oktamboeve@gmail.com">oktamboeve@gmail.com</a></p>
+            <div class="header-content">
+                <div class="profile-pic">
+                    <img src="profile.jpg" alt="Profile Picture">
+                </div>
+                <div class="personal-info">
+                    <h1>John Doe</h1>
+                    <p>Birth Date: January 15, 1998</p>
+                    <p>Phone: +1234567890</p>
+                    <p>Address: 123 Medical Street, Springfield</p>
+                    <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+                </div>
             </div>
         </header>
         <section class="about">
-            <h2>Цель</h2>
-            <p>Получить грант на резидентуру по специальности «Урология и андрология взрослая, детская» за счет МИО для развития здравоохранения в сельских местностях.</p>
+            <h2>Objective</h2>
+            <p>To secure a residency position in Pediatrics to further develop my clinical skills and contribute to improving child healthcare.</p>
         </section>
         <section class="education">
-            <h2>Образование</h2>
+            <h2>Education</h2>
             <div class="edu-item">
-                <h3>Школа-лицей № 107 имени Ю.Сареми</h3>
-                <p>2005–2017</p>
-                <p>Окончил школу с отличием и знаком «Алтын белгi»</p>
+                <h3>Springfield High School</h3>
+                <p>2006–2014</p>
+                <p>Graduated with Honors</p>
             </div>
             <div class="edu-item">
-                <h3>Бакалавриат «Общая Медицина»</h3>
-                <p>НАО “Медицинский университет Астана”, 2017–2022</p>
-                <p>Текущий GPA: 3.51</p>
+                <h3>Bachelor of Medicine, Bachelor of Surgery (MBBS)</h3>
+                <p>Springfield Medical University, 2014–2020</p>
+                <p>GPA: 3.85</p>
             </div>
             <div class="edu-item">
-                <h3>Интернатура «Общая Медицина»</h3>
-                <p>НАО “Медицинский университет Астана”, 2022–2024</p>
+                <h3>Clinical Internship</h3>
+                <p>Springfield General Hospital, 2020–2022</p>
             </div>
         </section>
         <section class="experience">
-            <h2>Опыт работы</h2>
+            <h2>Experience</h2>
             <div class="exp-item">
-                <h3>Ассистент врача</h3>
-                <p>Медицинский центр «Elizaveta», 2022–2023</p>
+                <h3>Medical Assistant</h3>
+                <p>Springfield Clinic, 2019–2020</p>
+                <ul>
+                    <li>Assisted in patient care and management</li>
+                    <li>Conducted preliminary examinations</li>
+                    <li>Maintained patient records</li>
+                </ul>
             </div>
         </section>
         <section class="skills">
-            <h2>Навыки</h2>
+            <h2>Skills</h2>
             <ul>
-                <li>Свободное владение казахским, русским, узбекским языками</li>
-                <li>Английский уровень «Pre-Intermediate»</li>
-                <li>Опыт управления клиникой</li>
-                <li>Опытный пользователь ПК</li>
-                <li>Наличие водительских прав</li>
+                <li>Fluent in English and Spanish</li>
+                <li>Proficient in Microsoft Office and EMR systems</li>
+                <li>Excellent communication and interpersonal skills</li>
+                <li>Basic life support (BLS) certified</li>
             </ul>
         </section>
         <section class="certifications">
-            <h2>Сертификаты</h2>
+            <h2>Certifications</h2>
             <ul>
-                <li>Сертификат специалиста «Сестринское дело» 28.10.2022</li>
+                <li>Certified Medical Assistant (CMA) - 2020</li>
+                <li>Basic Life Support (BLS) - 2021</li>
             </ul>
         </section>
         <section class="interests">
-            <h2>Интересы</h2>
+            <h2>Interests</h2>
             <ul>
-                <li>Урология детская</li>
-                <li>Репродуктивная медицина</li>
-                <li>Андрология</li>
-                <li>Внедрение систем искусственного интеллекта в медицине</li>
-                <li>Проблемы урбанизации в медицине</li>
+                <li>Pediatrics</li>
+                <li>Child Psychology</li>
+                <li>Medical Research</li>
+                <li>Community Health Programs</li>
             </ul>
         </section>
         <footer>
-            <p>&copy; 2024 Элёр Октамбоев. Все права защищены.</p>
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
         </footer>
     </div>
-    <a href="Резюме-Октамбоев Э.pdf" download="Резюме-Октамбоев Э.pdf" id="downloadBtn">Скачать PDF</a>
+    <a href="resume.docx" download="John_Doe_Resume.pdf" id="downloadBtn">Download PDF</a>
+    <script src="script.js"></script>
 </body>
 </html>
